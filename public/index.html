@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Praktikum Minggu 4 - Deploy Aplikasi Statis ke Cloudflare Workers Static Assets.">
+  <title>PaaS Static Deployment — Cloudflare Workers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo">Cloudflare Deploy Lab</a>
+      <nav class="main-nav" aria-label="Navigasi Utama">
+        <ul>
+          <li><a href="index.html" class="nav-link active">Beranda</a></li>
+          <li><a href="about.html" class="nav-link">Tentang Project</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-section">
+      <span class="badge">Minggu 4 • Cloudflare Workers Static Assets</span>
+      <h1>Deploy Aplikasi Statis ke Cloudflare</h1>
+      <p class="hero-text">
+        Proyek ini dikembangkan untuk mempelajari alur deployment modern dari source code Git di GitHub hingga menjadi website publik aktif di <code>*.workers.dev</code>.
+      </p>
+    </section>
+
+    <section class="card-grid">
+      <article class="card">
+        <h2>Uji Interaktivitas JavaScript</h2>
+        <p>Klik tombol di bawah ini untuk memverifikasi bahwa skrip client-side berjalan sempurna setelah deployment.</p>
+        <div class="interactive-area">
+          <button id="cek" class="btn btn-primary">Cek JavaScript</button>
+          <p id="hasil" class="status-output" aria-live="polite"></p>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Informasi Deployment</h2>
+        <ul class="info-list">
+          <li><strong>Platform:</strong> Cloudflare Workers (Static Assets)</li>
+          <li><strong>Folder Assets:</strong> <code>./public</code></li>
+          <li><strong>Config File:</strong> <code>wrangler.jsonc</code></li>
+          <li><strong>Trigger Deploy:</strong> Git Push (Branch <code>main</code>)</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card checklist-card">
+      <h2>Checklist Evidence Deployment</h2>
+      <ul class="checklist">
+        <li><span class="check-icon">✓</span> Repository GitHub Publik tersedia</li>
+        <li><span class="check-icon">✓</span> File <code>wrangler.jsonc</code> terkonfigurasi pada root repo</li>
+        <li><span class="check-icon">✓</span> Asset statis berada di dalam folder <code>./public</code></li>
+        <li><span class="check-icon">✓</span> Deployment aktif dan dapat diakses publik melalui <code>*.workers.dev</code></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Practical Cloud Deployment Series — SMPN/SMK Cloud Computing Module.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
